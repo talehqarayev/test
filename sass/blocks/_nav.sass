@@ -8,28 +8,28 @@ nav
     padding: 0
     &_logo
         display: block
-        width: 114px
-        height: 55px
-        img
-            max-width: 100%
+        width: 152px
+        height: 50px
+        &_img
+            width: 152px
             height: 50px
     .menu
         width: 630px
         display: flex
-        justify-content: space-around
+        justify-content: space-between
         align-items: center
+        padding: 27px
         &_item
-            font-size: 14px   
             &_link
                 position: relative
                 text-decoration: none
-                font-weight: 500
+                font-weight: 600
                 color:rgba(43, 45, 58, 0.7)
+                font-size: 14px
                 &:hover
                     box-shadow: 0px 3px 0px $main-color
                     padding-bottom: 32px
                     color: $main-color
-                    font-weight: 600
 
     .contact
         display: flex
@@ -42,13 +42,16 @@ nav
             align-items: center
             font-weight: 600
             font-size: 13px
-            padding-right: 15px
+            padding-right: 26px
         &_phone
             display: flex
             justify-content: space-around
             align-items: center
             font-size: 13px
             font-weight: 600
+            a
+                text-decoration: none
             &_recall
                 font-size: 11px
+                text-decoration: none
                 color:  $main-color

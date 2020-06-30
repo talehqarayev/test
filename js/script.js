@@ -52,5 +52,8 @@ $(document).ready(function(){
         $(".overlay_mini").fadeOut("slow");
         event.stopPropagation();
         });
+    
+    $("input[name=phone]").mask("+7(999) 999-99-99");
+
 
 });
