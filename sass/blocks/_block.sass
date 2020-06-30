@@ -1,0 +1,84 @@
+.block
+    height: 620px
+    position: relative
+    display: flex
+
+    &_left
+        width: 50%
+        background: url("../img/bg-frame.png") center center / cover no-repeat
+
+    &_right
+        width: 50%
+        position: relative
+        background: url("../img/bg_2.png") center (center / cover) no-repeat
+        &::before
+            content: ""
+            position: absolute
+            width: 73px
+            height: 73px
+            background: $second-color
+            top: 73px
+            left: 27px
+            mix-blend-mode: screen
+            border: 1px solid $main-color
+            border-radius: 70px
+        &::after
+            content: ""
+            position: absolute
+            width: 73px
+            height: 73px
+            background: $second-color
+            top: 70px
+            right: 53px
+            mix-blend-mode: screen
+            border: 1px solid $main-color
+            border-radius: 70px
+
+        .img_1
+            position: absolute
+            top: 60px
+            left: 25px
+            transform: scale(-1,1)
+        .img_2
+            position: absolute
+            top: 60px
+            right: 55px
+
+        &_btn
+            position: absolute
+            top: 95px
+            left: 50px
+            border: none
+            background-color: $main-color
+            width: 27px
+            height: 27px
+            border-radius: 15px
+            cursor: pointer
+            &::after
+                content: ""
+                position: absolute
+                left: 6px
+                height: 1px
+                border: none
+                background-color: white
+                width: 15px
+            &::before
+                content: ""
+                position: absolute
+                height: 15px
+                border: none
+                top: 7px
+                background-color: white
+                width: 1px
+        &_btn_2
+            position: absolute
+            top: 94px
+            right: 77px
+            background: $second-color
+            width: 27px
+            height: 27px
+            border-radius: 15px
+            border: 1px solid $main-color
+            cursor: pointer
+            mix-blend-mode: screen
+            

@@ -1,0 +1,78 @@
+.header
+    background: url("../img/bg.png") center (center / cover) no-repeat
+    height: 625px
+    display: flex
+    justify-content: space-around
+    position: relative
+    &_text
+        color: white
+        padding-top: 123px
+        &_subheader
+            color: white
+            font-size: 52px
+            font-weight: 600
+        &_descrb
+            max-width: 550px
+            font-size: 16px
+            font-weight: 500
+            margin-top: 35px
+    &_button
+        @include btn
+        width: 185px
+        margin-top: 50px
+        height: 50px
+        font-size: 16px
+        &_transparent
+            background: transparent
+            border: 1px solid white
+            margin-right: 20px
+
+
+    // SLIDER
+
+    &_slider
+        display: flex
+        justify-content: center
+        position: relative
+        &::after
+            content: ""
+            position: absolute
+            top: 30%
+            right: 0
+            height: 220px
+            width: 1px
+            background-color: $main-color
+        &_item
+            position: relative
+            color: white
+            width: 300px
+            margin-top: 190px
+            height: auto
+            div
+                position: relative
+  
+        .item_subheader
+            color: $main-color
+            font-size: 60px
+            font-weight: bold
+        .item_descrb
+            margin-top: 24px
+            width: 285px
+            font-size: 14px
+            font-weight: 400
+            line-height: 20px
+            margin-bottom: 20px
+
+        .slick-prev
+            position: absolute
+            top: 100%
+            left: 0
+            cursor: pointer
+            &:hover
+                background: $main-color
+                border-radius: 15px
+        .slick-next
+            position: absolute
+            top: 100%
+            left: 25%
+            cursor: pointer

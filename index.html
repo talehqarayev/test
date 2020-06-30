@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Shukran Garayev">
+    <link rel="stylesheet" href="css/slick.css"/>
+    <link rel="stylesheet" href="css/style.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;500;600&display=swap" rel="stylesheet">
+    <title>Dj-store</title>
+</head>
+<body>
+
+    <nav class="nav">
+                
+            <a href="#" class="nav_logo"> <img src="img/logo.svg" alt="logo"> </a>
+
+            <ul class="menu">
+                <li class="menu_item"> <a href="#" class="menu_item_link"> Главная </a> </li>
+                <li class="menu_item"> <a href="#" class="menu_item_link"> Проекты </a> </li>
+                <li class="menu_item"> <a href="#" class="menu_item_link"> Услуги </a> </li>
+                <li class="menu_item"> <a href="#" class="menu_item_link"> О компании </a> </li>
+                <li class="menu_item"> <a href="#" class="menu_item_link"> Готовые решения </a> </li>
+                <li class="menu_item"> <a href="#" class="menu_item_link"> Контакты </a> </li>
+            </ul>
+
+            <div class="contact">
+
+                <div class="contact_email">
+                    <img src="icons/mail_icon.svg" alt="email">
+                    info@sld-store.ru
+                </div>
+
+                <div class="contact_phone">
+                    <img src="icons/phone_icon.svg" alt="phone">
+                    <a href="tel:+88126156279">
+                        <div class="contact_phone_recall">обратный звонок</div> 
+                        <div>8 812 615-62-79</div>
+                    </a>
+                </div>
+
+            </div>
+    </nav>
+
+
+    <header class="header">
+
+        <div class="header_text">
+            Оснащение конференц-залов
+            <div class="header_text_subheader">Видео конференции</div>
+            <div class="header_text_descrb">Профессиональное оборудование для конференц-залов предназначено для проведения и 
+                организации презентаций, совещаний, бизнес-тренингов и онлайн-трансляции контента.</div>
+            <button class="header_button header_button_transparent" data-modal="consultation">Обратный звонок</button>
+            <button class="header_button">Заполнить бриф</button>
+        </div>
+        
+        <div class="header_slider">
+            <div class="container">
+                <div class="header_slider_item">
+
+                    <div>
+                        <div class="item_subheader">01</div>
+                        <div class="item_descrb">
+                            Простота использования оснащения позволяет решать функциональные и 
+                            организационные задачи, оптимизировать работу, проводить мероприятия различного масштаба.
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="item_subheader">02</div>
+                        <div class="item_descrb">
+                            Простота использования оснащения позволяет решать функциональные и 
+                            организационные задачи, оптимизировать работу, проводить мероприятия различного масштаба.
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="item_subheader">03</div>
+                        <div class="item_descrb">
+                            Простота использования оснащения позволяет решать функциональные и 
+                            организационные задачи, оптимизировать работу, проводить мероприятия различного масштаба.
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <div class="item_subheader">04</div>
+                        <div class="item_descrb">
+                            Простота использования оснащения позволяет решать функциональные и 
+                            организационные задачи, оптимизировать работу, проводить мероприятия различного масштаба.
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+                
+    </header>
+
+
+
+
+    <section class="block">
+
+        <div class="block_left">
+
+        </div>
+
+        <div class="block_right">
+            <img src="img/Electro_Voice_EVID_42T_s250-removebg-preview 2.png" class="img_1" alt="Electro-Voice">
+            <img src="img/Electro_Voice_EVID_42T_s250-removebg-preview 2.png" class="img_2" alt="Electro-Voice">
+            <button class="block_right_btn" data-modal="info"></button>
+            <button class="block_right_btn_2"></button>
+        </div>
+    </section>
+
+
+
+    <section class="overlay">
+        <div class="modal" id="consultation">
+            <div class="container">
+                <div class="modal_close">&times;</div>
+                <div class="modal_subheader">Готовы обсудить проект?</div>
+                <div class="modal_descrb">Заполните форму ниже и мы свяжемся с вами.</div>
+                <form action="#" class="modal_form">
+                    <input name="text" required type="text" placeholder="Имя*"> 
+                    <input name="phone" required type="tel" placeholder="Телефон*">
+                    <div class="agreement"> 
+                        <input name="checking" type="checkbox" name=""> 
+                        Я согласен с условиями обработки <a href="#">персональных данных</a>
+                    </div>
+                    <button type="submit" class="button">Отправить</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+    <section class="overlay_mini">
+        <div class="modal_mini" id="info">
+            <div class="container">
+                <div class="modal_mini_close">&times;</div>
+                <div class="modal_mini_subheader">Electro-Voice EVID 4.2</div>
+                <ul class="modal_mini_parameter">
+                    <li>Очень мягкое звучание.</li>
+                    <li>Чувствительность — 89 дБ.</li>
+                    <li>Пиковая мощность — 400 Вт.</li>
+                    <li>Степень влагозащищенности IP34.</li>
+                </ul>
+                <img src="icons/mini_modal.svg" class="modal_mini_img" alt="">
+            </div>
+        </div>
+        
+    </section>
+
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
